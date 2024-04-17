@@ -31,7 +31,7 @@ The code structure of the program is as follows：
 3. Define the event handler function on_plot_hover:
 
     - This function handles the hover event on the plot and displays the coordinates of the hovered point.
-    - 
+    
 4. Define the function plot_function_integral_volume:
 
     - This function is called when the "Plot Function and Integral" button is clicked.
@@ -44,7 +44,7 @@ The code structure of the program is as follows：
     - Create the Tk window object.
     - Set the window title, size, and style.
     - Create a main frame to hold the widgets and configure its layout.
-    - 
+      
 6. Create Tkinter widgets:
 
     - Create labels, entry fields, checkboxes, and buttons for user input.
@@ -54,7 +54,7 @@ The code structure of the program is as follows：
 
     - Configure the layout of the main frame using columnconfigure and rowconfigure.
     - Bind the event handler function to the Matplotlib plot using canvas.mpl_connect.
-    - 
+      
 8. Run the Tkinter main event loop:
 
     - Start the Tkinter event loop to display the GUI window and handle user interactions.
