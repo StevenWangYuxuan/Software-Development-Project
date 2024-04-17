@@ -187,7 +187,7 @@ What is Agile and why is it a great fit?
 ### Algorithm*
 Function and integral plotting:
 - Sympy calculation:
-- 
+  
 ```
 
     x_symbol = sp.symbols('x')
@@ -271,7 +271,7 @@ plt.show()
 ```
 Mouse hover event:
 
-- Matplotlib事件处理：
+- Matplotlib event handling：
   
 ```
 def on_plot_hover(event, axs, fig, canvas):
