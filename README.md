@@ -159,9 +159,15 @@ What is Agile and why is it a great fit?
 
 ### Schedule
 
-  Sprint 1: Function and integral plotting  
-  Sprint 2: Volume calculation and visualization  
-  Sprint 3: User interface enhancements and bug fixes
+1. Import the necessary modules and libraries, including Tkinter, matplotlib, numpy, and sympy.
+2. Define a function called plot_volume_around_axis to calculate and plot the volume around the specified axis.
+3. Define a function called on_plot_hover to handle mouse hover events and display the coordinates of data points on the graph.
+4. Define a function called plot_function_integral_volume to plot the function and its integral and display the computed volume.
+6. Create a Tkinter window called window and set the window title, size, and style.
+7. Create the main frame main_frame within the window to hold other GUI elements.
+8. Create labels, input fields, checkboxes, buttons, and text labels within the main frame to receive user input and display results.
+9. Configure the weights of rows and columns within the main frame to ensure adaptive layout adjustments when the window size changes.
+10. Start the Tkinter event loop to wait for user interactions.
 
 # #
 
