@@ -55,12 +55,12 @@ The code structure of the program is as follows：
 
 # #
 
-### Which type of software development process is applied.
+### The type of software development process is applied.
 - Agile
 
 # #
 
-### Why you choses this type (Waterfall vs. Agile)?
+###The reason why we choose (Waterfall vs. Agile) ?
 #### Background
 
 > In the absence of robust mathematical tools, we are committed to developing a powerful and easy-to-use software that will allow students and educators to visualize and understand complex mathematical concepts with ease.
