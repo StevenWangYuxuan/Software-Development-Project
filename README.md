@@ -62,9 +62,9 @@ The code structure of the program is as follows：
 # #
 
 ### Graphical Abstract*
-![1](https://github.com/StevenWangYuxuan/RW-project/blob/main/README-project/1.png)
+![3](https://github.com/StevenWangYuxuan/RW-project/blob/main/README-project/3.png)
 
-![2](https://github.com/StevenWangYuxuan/RW-project/blob/main/README-project/2.png)
+![4](https://github.com/StevenWangYuxuan/RW-project/blob/main/README-project/4.png)
 
 # #
 
@@ -73,7 +73,7 @@ The code structure of the program is as follows：
 
 # #
 
-###The reason why we choose (Waterfall vs. Agile) ?
+### The reason why we choose (Waterfall vs. Agile) ?
 #### Background
 
 > In the absence of robust mathematical tools, we are committed to developing a powerful and easy-to-use software that will allow students and educators to visualize and understand complex mathematical concepts with ease.
@@ -109,7 +109,6 @@ What is Agile and why is it a great fit?
 1. **Requirements Gathering and Analysis:**
 
 - Functional Requirements:   
-
   - Plot mathematical functions.
   - Calculate the integral of functions.
   - Calculate the volume of revolution around specified axes.
@@ -117,6 +116,13 @@ What is Agile and why is it a great fit?
   - User-friendly graphical interface.
   - Efficient and accurate calculations.
   - Extensible for future features.
+    
+- UML
+use case diagram:
+![4](https://github.com/StevenWangYuxuan/RW-project/blob/main/README-project/4.png)
+
+sequence diagram:
+![5](https://github.com/StevenWangYuxuan/RW-project/blob/main/README-project/5.png)
 
 2. **Design:**
 
