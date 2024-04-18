@@ -77,6 +77,7 @@
       
 # #
 # # # 그래픽 요약 * (이 소프트웨어는 어떻게 생겼습니까?)
+
 <img width=“700”height=“400”src=“https://github.com/StevenWangYuxuan/Software-Development-Project/blob/main/img/5.png"/>
 <img width=“700”height=“400”src=“https://github.com/StevenWangYuxuan/Software-Development-Project/blob/main/img/6.png"/>
 <img width=“700”height=“400”src=“https://github.com/StevenWangYuxuan/Software-Development-Project/blob/main/img/8.png"/>
@@ -152,3 +153,180 @@ UML
 - 업데이트 및 패치: 기능을 개선하고 문제를 해결하기 위해 업데이트를 게시합니다.
 - 기술 지원: 문제가 있는 사용자를 지원합니다.
 # #
+
+# # # 구성원 (역할, 책임 및 부분)
+** 작업 1**: 사용자 인터페이스 및 그래픽 디스플레이 만들기(Shay)
+- 입력 필드, 버튼 및 그래픽 디스플레이를 작성합니다.
+- 직관적인 사용자 환경과 함께 어플리케이션을 사용하기 쉽도록 합니다.
+** 작업 2**: 함수 해석, 적분 계산 및 볼륨 계산 구현(Steven)
+- 함수 해석, 적분 계산 및 볼륨 계산을 위한 알고리즘을 구현합니다.
+- 응용 프로그램이 수학적으로 정확하고 다양한 기능을 처리할 수 있는지 확인합니다.
+**작업 3**: 데이터 시각화 설계 및 구현, Youtube를 통한 프레젠테이션 비디오(James) 제작
+- 함수, 적분 및 볼륨 결과의 시각적 표현을 설계하고 구현합니다.
+- 그래픽이 명확하고 정보가 풍부하며 이해하기 쉽도록 합니다.
+** 작업 4**: 테스트 및 문서(전체 3명)
+- 애플리케이션의 기능과 정확성을 검증하기 위한 테스트 용례를 작성하고 실행합니다.
+- 응용 프로그램의 기능과 사용 방법을 설명하는 사용자 설명서와 문서를 작성합니다.
+# # # 타임라인:
+- 1주차(3/11-3/18): 작업 시작 1 및 2
+- 2주차(3/33/30): 작업 시작 3
+- 3주차(4/5-4/12): 작업 완료 1, 2, 3
+- 4주차(4/20년 4월 13일~4일): 임무 완료4
+# # # # 커뮤니케이션 프로그램:
+-** 일일 스탠딩 세션 **: 진행, 장애물 및 다음 단계를 논의하는 간단한 일일 세션입니다.
+-** 코드 검토 **: 코드 검토는 품질 및 일관성을 보장하기 위해 코드를 커밋하기 전에 수행됩니다.
+-** 인스턴트 메시징 **: Slack 또는 Microsoft Teams와 같은 인스턴트 메시징 플랫폼은 신속한 의사 소통과 문제 해결을 위해 사용됩니다.
+# #
+일정
+1. Tkinter, matplotlib, numpy 및 sympy를 포함하여 필요한 모듈과 라이브러리를 가져옵니다.
+2. plot_volume_around_aaxis라는 함수를 정의하여 지정된 축 주위의 볼륨을 계산하고 그립니다.
+3. on_plot_hover라는 함수를 정의하여 마우스오버 이벤트를 처리하고 도면의 데이터 점 좌표를 표시합니다.
+4. 함수와 적분을 그리고 계산된 볼륨을 표시하는 plot_function_integral_volume이라는 함수를 정의합니다.
+6. 윈도우라는 Tkinter 창을 만들고 창 제목, 크기 및 스타일을 설정합니다.
+7. 창에 기본 프레임 main_frame을 만들어 다른 GUI 요소를 포함합니다.
+8. 기본 프레임에 레이블, 입력 필드, 확인란, 버튼 및 텍스트 레이블을 만들어 사용자 입력을 받아 결과를 표시합니다.
+9. 기본 프레임의 행과 열의 가중치를 설정하여 창 크기가 변경될 때 레이아웃에 맞게 조정할 수 있도록 합니다.
+10. Tkinter 이벤트 루프를 시작하여 사용자 상호 작용을 기다립니다.
+# #
+# # # 알고리즘 *
+함수 및 적분 드로잉:
+-Sympy 계산:
+  
+```
+x_symbol=sp.symbols（'x'）
+original_function=sp.sympify（function_input）
+integral_function=sp.integrate(원본 함수, x_symbol)
+```
+- Matplotlib 드로잉:
+  
+```
+그림, axs = plt.subplots (3, 1, 그림 크기 = (8, 12), gridsec_kw= -'가중치 비율': [1, 1, 0.5],'hspace': 0.5｝)
+x_vals=np. 포리스트 공간 (시작, 끝, 400)
+# 원래 함수 그리기
+f_original_lamdified=sp.lambdify（x_symbol，original_function，'numpy'）
+y_vals_original= 원본_수정(x_vals)
+axs[0]. 드로잉(x_vals, y_vals_original, label=f'f(x) ={original_function}')
+axs[0].set_title('원본 함수 그래프')
+axs[0].grid（True）
+axs[0].legend（）
+# 드로잉 적분 함수
+f_fintegral_lambdified=sp.lambdify（x_symbol，integral_function，'numpy'）
+y_vals_integral=f 포인트_람다 정의(x_vals)
+axs[1].plot(x_vals, y_vals_integral, label=f'f(x)의 포인트 = {integral_function}')
+axs[1].set_title('전체 그림(C 포함)')
+axs[1].grid（True）
+axs[1].legend（）
+# 포인트 결과 표시
+integral_result=integral_function.subs(x_symbol, 끝)-integral_formation.subss(x_symbol, 시작)
+axs[2].text(0.5, 0.5, f'전체 결과:'Integral_Result.evalf()｝', 수평 정렬 ='중심', 수직 정렬 ='중앙', 변환 = axs[2].transAxes)
+axs[2] 축 (닫기)
+```
+볼륨 계산 및 드로잉:
+-Sympy 계산:
+  
+```
+축 = = "x" 인 경우
+볼륨 = sp.pi*sp.integrate(원본 함수 **2, (x_symbol, 시작, 끝))
+기타: # y 축
+볼륨 = sp.pi*sp.integrate(원본 함수 **2, (x_symbol, 시작, 끝))
+```
+- Matplotlib 드로잉:
+```
+축 = = "x" 인 경우
+volume=sp.pi*sp.integrate(함수 **2,(x_symbol, 시작, 끝))
+기타: # y 축
+volume=sp.pi*sp.integrate(함수 **2,(x_symbol, 시작, 끝))
+    
+integral_function=sp.integrate(함수, x_symbol)
+f_lambdified=sp.lambdify（x_symbol，integral_function，'numpy'）
+그림 = plt. 그림 (그림 크기 = (10, 8))
+ax= 그림 add_subplot(111, 투영 ='3d')
+x=np. 포리스트 공간 (시작, 끝, 100)
+phi=np. 포리스트 공간(0,2*np.pi,100)
+X, P = np. 그리드(X, phi)
+R=λ（X）
+축 = = "x" 인 경우
+Y=R*np.cos（P）
+Z=R*np.sin（P）
+기타: # Y축 주위
+Y=X
+X=R*np.cos（P）
+Z=R*np.sin（P）
+ax.plot_surface(X, Y, Z, 색상 ='b', alpha = 0.6)
+ax.set_xrabel("X축")
+ax.set_ylabel("Y축")
+ax.set_zlabel("Z축")
+# 在标题中显示体积结果
+ax.set_title(f'{axis.uper()} - 축의 볼륨: {Volume.evalf()}')
+plt.show（）
+```
+마우스 정지 이벤트:
+- Matplotlib 이벤트 처리:
+  
+```
+def on_plot_hover(이벤트, 축, 그림, 캔버스):
+ax-in-axs의 경우:
+event.inaxe==ax:
+ax.get_lines()의 행:
+cont, ind= 행. 포함 (이벤트)
+계속하는 경우:
+xdata，ydata=line.get_data（）
+x、 y=xdata[ind[“ind”][0]，ydata[ind]“ind“][0]
+annot=ax.annotate(f"({x:.2f}, {y:.2f｝)", xy=(x, y), xytext=(20, 20), textcoords="오프셋 포인트",
+bbox=dict(boxstyle="원형, pad=0.5", fc="노란색", alpha=0.5),
+arrowprops=dict（arrowstyle=“->”，connectionstyle=“arc3，rad=.5”）
+그림 canvas.draw_idle()
+def remove_annot（）：
+annot.remove（）
+그림 canvas.draw_idle()
+그림 canvas.mpl_connect("motion_notify_event", lambda 이벤트: remove_annot())
+```
+추가 기능
+- Tkinter 위젯:
+  
+```
+window=tk.tk（）
+window.title（“Calculus Visualizer”）
+style=ttk。스타일
+style.theme_use（'clam'）
+window.misize（600400）
+main_frame=ttk。프레임(창, padding="10 10 10 10")
+main_frame.grid(행 = 0, 열 = 0, 점성 = (tk.W, tk.E, tk.N, tk.S))
+window.columnconfigure（0，weight=1）
+window.rowconfigure（0，weight=1）
+```
+- 탐색 도구 모음 2Tk:
+  
+```
+toolbar= Toolbar2Tk 탐색(캔버스, 창)
+toolbar.update（）
+canvas_widget.grid(행 = 5, 열 = 0, 열 span = 4)
+canvas.mpl_connect('motion_otify_event', lambda 이벤트: on_plot_hover(이벤트, axs, fig, canvas))
+toolbar_frame=ttk。프레임 (창)
+toolbar_frame.grid(행 = 4, 열 = 0, 열 경계 = 4, 점성 = (tk.W, tk.E))
+toolbar= Toolbar2Tk 탐색(캔버스, 도구막대_프레임)
+toolbar.update（）
+```
+# #
+# # 소프트웨어의 현재 상태
+-Alpha Release: 기능 및 전체 드로잉을 포함한 기본 기능을 구현합니다.
+- 베타 버전 (예정): 볼륨 계산 및 시각화 기능이 추가됩니다.
+- 안정적 게시 (예정): 사용자 인터페이스 개선 사항 및 버그 수정이 구현됩니다.
+# #
+# # # 향후 계획
+- 고급 기능:
+- 3D 공간에 커브 그리기
+- 사용자 정의 함수 통합
+- 교육 자료:
+- 온라인 학습 플랫폼과의 통합
+- 대화형 자습서 및 시뮬레이션 개발
+공동 작업
+- 지역 사회 공헌을 위한 오픈 소스 소프트웨어
+- 교육자와 협력하여 교육적 가치 향상
+공지
+* * 구체적으로 코드 조각은 다음과 같은 패키지를 사용합니다. * *
+-**Sympy**: 함수 해석, 적분 계산 및 볼륨 계산.
+-**NumPy**: 데이터 점을 생성하고 메쉬를 만듭니다.
+-**Matplotlib**: 3D 곡면 다이어그램, 원본 함수 다이어그램 및 적분 함수 다이어그램을 작성합니다.
+-**Tkinter**: GUI 창, 버튼, 레이블 및 기타 위젯을 작성합니다.
+> 은 (는) 이러한 외부 패키지를 활용하여 코드 조각을 처음부터 이러한 기능을 구현하지 않고도 함수와 적분을 계산하고 시각화하는 등 핵심 기능에 집중할 수 있습니다.
