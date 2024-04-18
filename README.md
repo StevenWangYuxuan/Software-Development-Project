@@ -64,8 +64,7 @@ The code structure of the program is as follows：
 ### Graphical Abstract* (What does this software look like?)
 <img width="800" height="500" src="https://github.com/StevenWangYuxuan/Software-Development-Project/blob/main/img/5.png"/>
 
-
-![6](https://github.com/StevenWangYuxuan/Software-Development-Project/blob/main/img/6.png)
+<img width="800" height="500" src="https://github.com/StevenWangYuxuan/Software-Development-Project/blob/main/img/6.png"/>
 
 # #
 
@@ -120,11 +119,12 @@ What is Agile and why is it a great fit?
     
 UML
 - use case diagram:
-![4](https://github.com/StevenWangYuxuan/Software-Development-Project/blob/main/img/4.png)
 
+<img width="800" height="500" src="https://github.com/StevenWangYuxuan/Software-Development-Project/blob/main/img/4.png"/>
 
 - sequence diagram:
-![3](https://github.com/StevenWangYuxuan/Software-Development-Project/blob/main/img/3.png)
+<img width="800" height="500" src="https://github.com/StevenWangYuxuan/Software-Development-Project/blob/main/img/3.png"/>
+
 
 2. **Design:**
 
