@@ -78,9 +78,12 @@
 # #
 # # # 그래픽 요약 * (이 소프트웨어는 어떻게 생겼습니까?)
 
-<img width=“700”height=“400”src=“https://github.com/StevenWangYuxuan/Software-Development-Project/blob/main/img/5.png"/>
-<img width=“700”height=“400”src=“https://github.com/StevenWangYuxuan/Software-Development-Project/blob/main/img/6.png"/>
-<img width=“700”height=“400”src=“https://github.com/StevenWangYuxuan/Software-Development-Project/blob/main/img/8.png"/>
+<img width="700" height="400" src="https://github.com/StevenWangYuxuan/Software-Development-Project/blob/main/img/5.png"/>
+
+<img width="700" height="400" src="https://github.com/StevenWangYuxuan/Software-Development-Project/blob/main/img/6.png"/>
+
+<img width="700" height="400" src="https://github.com/StevenWangYuxuan/Software-Development-Project/blob/main/img/8.png"/>
+
 # #
 # # # 애플리케이션 개발 프로세스의 유형입니다.
 민첩했어
@@ -117,9 +120,13 @@
     
 UML
 - 용례도:
-<img width=“700”height=“400”src=“https://github.com/StevenWangYuxuan/Software-Development-Project/blob/main/img/4.png"/>
+  
+<img width="700" height="400" src="https://github.com/StevenWangYuxuan/Software-Development-Project/blob/main/img/4.png"/>
+
 - 순서도:
-<img width=“700”height=“400”src=“https://github.com/StevenWangYuxuan/Software-Development-Project/blob/main/img/3.png"/>
+<img width="700" height="400" src="https://github.com/StevenWangYuxuan/Software-Development-Project/blob/main/img/3.png"/>
+
+
 2. ** 디자인: **
 - 고급 아키텍처:
 - 사용자 입력 및 시각화를 위한 GUI
@@ -193,119 +200,133 @@ UML
 -Sympy 계산:
   
 ```
-x_symbol=sp.symbols（'x'）
-original_function=sp.sympify（function_input）
-integral_function=sp.integrate(원본 함수, x_symbol)
+ x_symbol = sp.symbols('x')
+original_function = sp.sympify(function_input)
+integral_function = sp.integrate(original_function, x_symbol)
 ```
 - Matplotlib 드로잉:
   
 ```
-그림, axs = plt.subplots (3, 1, 그림 크기 = (8, 12), gridsec_kw= -'가중치 비율': [1, 1, 0.5],'hspace': 0.5｝)
-x_vals=np. 포리스트 공간 (시작, 끝, 400)
-# 원래 함수 그리기
-f_original_lamdified=sp.lambdify（x_symbol，original_function，'numpy'）
-y_vals_original= 원본_수정(x_vals)
-axs[0]. 드로잉(x_vals, y_vals_original, label=f'f(x) ={original_function}')
-axs[0].set_title('원본 함수 그래프')
-axs[0].grid（True）
-axs[0].legend（）
-# 드로잉 적분 함수
-f_fintegral_lambdified=sp.lambdify（x_symbol，integral_function，'numpy'）
-y_vals_integral=f 포인트_람다 정의(x_vals)
-axs[1].plot(x_vals, y_vals_integral, label=f'f(x)의 포인트 = {integral_function}')
-axs[1].set_title('전체 그림(C 포함)')
-axs[1].grid（True）
-axs[1].legend（）
-# 포인트 결과 표시
-integral_result=integral_function.subs(x_symbol, 끝)-integral_formation.subss(x_symbol, 시작)
-axs[2].text(0.5, 0.5, f'전체 결과:'Integral_Result.evalf()｝', 수평 정렬 ='중심', 수직 정렬 ='중앙', 변환 = axs[2].transAxes)
-axs[2] 축 (닫기)
+fig, axs = plt.subplots(3, 1, figsize=(8, 12), gridspec_kw={'height_ratios': [1, 1, 0.5], 'hspace': 0.5})
+x_vals = np.linspace(start, end, 400)
+
+# Plot original function
+f_original_lambdified = sp.lambdify(x_symbol, original_function, 'numpy')
+y_vals_original = f_original_lambdified(x_vals)
+axs[0].plot(x_vals, y_vals_original, label=f'f(x)={original_function}')
+axs[0].set_title('Original Function Plot')
+axs[0].grid(True)
+axs[0].legend()
+
+# Plot integral function
+f_integral_lambdified = sp.lambdify(x_symbol, integral_function, 'numpy')
+y_vals_integral = f_integral_lambdified(x_vals)
+axs[1].plot(x_vals, y_vals_integral, label=f'Integral of f(x)={integral_function}')
+axs[1].set_title('Integral Plot(Withou C)')
+axs[1].grid(True)
+axs[1].legend()
+
+# Display integral result
+integral_result = integral_function.subs(x_symbol, end) - integral_function.subs(x_symbol, start)
+axs[2].text(0.5, 0.5, f'Integral Result: {integral_result.evalf()}', horizontalalignment='center', verticalalignment='center', transform=axs[2].transAxes)
+axs[2].axis('off')
+
 ```
 볼륨 계산 및 드로잉:
 -Sympy 계산:
   
 ```
-축 = = "x" 인 경우
-볼륨 = sp.pi*sp.integrate(원본 함수 **2, (x_symbol, 시작, 끝))
-기타: # y 축
-볼륨 = sp.pi*sp.integrate(원본 함수 **2, (x_symbol, 시작, 끝))
+if axis == 'x':
+    volume = sp.pi * sp.integrate(original_function**2, (x_symbol, start, end))
+else:  # y-axis
+    volume = sp.pi * sp.integrate(original_function**2, (x_symbol, start, end))
+
 ```
 - Matplotlib 드로잉:
 ```
-축 = = "x" 인 경우
-volume=sp.pi*sp.integrate(함수 **2,(x_symbol, 시작, 끝))
-기타: # y 축
-volume=sp.pi*sp.integrate(함수 **2,(x_symbol, 시작, 끝))
+if axis == 'x':
+    volume = sp.pi * sp.integrate(function**2, (x_symbol, start, end))
+else:  # y-axis
+    volume = sp.pi * sp.integrate(function**2, (x_symbol, start, end))
     
-integral_function=sp.integrate(함수, x_symbol)
-f_lambdified=sp.lambdify（x_symbol，integral_function，'numpy'）
-그림 = plt. 그림 (그림 크기 = (10, 8))
-ax= 그림 add_subplot(111, 투영 ='3d')
-x=np. 포리스트 공간 (시작, 끝, 100)
-phi=np. 포리스트 공간(0,2*np.pi,100)
-X, P = np. 그리드(X, phi)
-R=λ（X）
-축 = = "x" 인 경우
-Y=R*np.cos（P）
-Z=R*np.sin（P）
-기타: # Y축 주위
-Y=X
-X=R*np.cos（P）
-Z=R*np.sin（P）
-ax.plot_surface(X, Y, Z, 색상 ='b', alpha = 0.6)
-ax.set_xrabel("X축")
-ax.set_ylabel("Y축")
-ax.set_zlabel("Z축")
-# 在标题中显示体积结果
-ax.set_title(f'{axis.uper()} - 축의 볼륨: {Volume.evalf()}')
-plt.show（）
+integral_function = sp.integrate(function, x_symbol)
+f_lambdified = sp.lambdify(x_symbol, integral_function, 'numpy')
+
+fig = plt.figure(figsize=(10, 8))
+ax = fig.add_subplot(111, projection='3d')
+
+x = np.linspace(start, end, 100)
+phi = np.linspace(0, 2 * np.pi, 100)
+X, P = np.meshgrid(x, phi)
+
+R = f_lambdified(X)
+if axis == 'x':
+    Y = R * np.cos(P)
+    Z = R * np.sin(P)
+else:  # Around y-axis
+    Y = X
+    X = R * np.cos(P)
+    Z = R * np.sin(P)
+
+ax.plot_surface(X, Y, Z, color='b', alpha=0.6)
+ax.set_xlabel('X axis')
+ax.set_ylabel('Y axis')
+ax.set_zlabel('Z axis')
+# 
+ax.set_title(f'Volume around {axis.upper()}-axis: {volume.evalf()}')
+
+plt.show()
+
 ```
 마우스 정지 이벤트:
 - Matplotlib 이벤트 처리:
   
 ```
-def on_plot_hover(이벤트, 축, 그림, 캔버스):
-ax-in-axs의 경우:
-event.inaxe==ax:
-ax.get_lines()의 행:
-cont, ind= 행. 포함 (이벤트)
-계속하는 경우:
-xdata，ydata=line.get_data（）
-x、 y=xdata[ind[“ind”][0]，ydata[ind]“ind“][0]
-annot=ax.annotate(f"({x:.2f}, {y:.2f｝)", xy=(x, y), xytext=(20, 20), textcoords="오프셋 포인트",
-bbox=dict(boxstyle="원형, pad=0.5", fc="노란색", alpha=0.5),
-arrowprops=dict（arrowstyle=“->”，connectionstyle=“arc3，rad=.5”）
-그림 canvas.draw_idle()
-def remove_annot（）：
-annot.remove（）
-그림 canvas.draw_idle()
-그림 canvas.mpl_connect("motion_notify_event", lambda 이벤트: remove_annot())
+def on_plot_hover(event, axs, fig, canvas):
+    for ax in axs:
+        if event.inaxes == ax:
+            for line in ax.get_lines():
+                cont, ind = line.contains(event)
+                if cont:
+                    xdata, ydata = line.get_data()
+                    x, y = xdata[ind["ind"][0]], ydata[ind["ind"][0]]
+                    annot = ax.annotate(f"({x:.2f}, {y:.2f})", xy=(x, y), xytext=(20, 20), textcoords="offset points",
+                                        bbox=dict(boxstyle="round,pad=0.5", fc="yellow", alpha=0.5),
+                                        arrowprops=dict(arrowstyle="->", connectionstyle="arc3,rad=.5"))
+                    fig.canvas.draw_idle()
+                    def remove_annot():
+                        annot.remove()
+                        fig.canvas.draw_idle()
+                    fig.canvas.mpl_connect("motion_notify_event", lambda event: remove_annot())
 ```
 추가 기능
 - Tkinter 위젯:
   
 ```
-window=tk.tk（）
-window.title（“Calculus Visualizer”）
-style=ttk。스타일
-style.theme_use（'clam'）
-window.misize（600400）
-main_frame=ttk。프레임(창, padding="10 10 10 10")
-main_frame.grid(행 = 0, 열 = 0, 점성 = (tk.W, tk.E, tk.N, tk.S))
-window.columnconfigure（0，weight=1）
-window.rowconfigure（0，weight=1）
+window = tk.Tk()
+window.title("Calculus Visualizer")
+style = ttk.Style()
+style.theme_use('clam')
+window.minsize(600, 400)
+main_frame = ttk.Frame(window, padding="10 10 10 10")
+main_frame.grid(row=0, column=0, sticky=(tk.W, tk.E, tk.N, tk.S))
+window.columnconfigure(0, weight=1)
+window.rowconfigure(0, weight=1)
+
 ```
 - 탐색 도구 모음 2Tk:
   
 ```
-toolbar= Toolbar2Tk 탐색(캔버스, 창)
-toolbar.update（）
-canvas_widget.grid(행 = 5, 열 = 0, 열 span = 4)
-canvas.mpl_connect('motion_otify_event', lambda 이벤트: on_plot_hover(이벤트, axs, fig, canvas))
-toolbar_frame=ttk。프레임 (창)
-toolbar_frame.grid(행 = 4, 열 = 0, 열 경계 = 4, 점성 = (tk.W, tk.E))
-toolbar= Toolbar2Tk 탐색(캔버스, 도구막대_프레임)
-toolbar.update（）
+toolbar = NavigationToolbar2Tk(canvas, window)
+toolbar.update()
+canvas_widget.grid(row=5, column=0, columnspan=4)
+canvas.mpl_connect('motion_notify_event', lambda event: on_plot_hover(event, axs, fig, canvas))
+
+toolbar_frame = ttk.Frame(window) 
+toolbar_frame.grid(row=4, column=0, columnspan=4, sticky=(tk.W, tk.E))  
+toolbar = NavigationToolbar2Tk(canvas, toolbar_frame)  
+toolbar.update()
+
 ```
 # #
 # # 소프트웨어의 현재 상태
