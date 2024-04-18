@@ -134,7 +134,7 @@ What is Agile and why is it a great fit?
 
 > In conclusion, Agile development is the optimal approach for developing our Calculus Visualizer software. It will allow us to iterate quickly, adapt to change, collaborate with our users, and capture market share. We are confident that by embracing Agile methodologies, we can create a groundbreaking software that will revolutionize the way students and educators learn and teach mathematics.
 # #
-### Possible usage of the software (i.e., target market)
+### Possible usage of the software (i.e., target market for the students preparing for advanced mathematics)
 - **Educational institutions (e.g., schools, universities)** ：The code can be used as a teaching tool to help students visualize functions, integrals, and volumes of revolution. It can also be used to demonstrate the concepts of calculus in a more interactive and engaging way.
 - **Students and educators in calculus courses**
 - Individuals interested in visualizing calculus concepts
