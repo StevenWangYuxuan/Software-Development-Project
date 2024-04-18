@@ -61,8 +61,9 @@ The code structure of the program is as follows：
       
 # #
 
-### Graphical Abstract*
+### Graphical Abstract* (What does this software look like?)
 ![5](https://github.com/StevenWangYuxuan/Software-Development-Project/blob/main/img/5.png)
+
 
 ![6](https://github.com/StevenWangYuxuan/Software-Development-Project/blob/main/img/6.png)
 
@@ -117,11 +118,12 @@ What is Agile and why is it a great fit?
   - Efficient and accurate calculations.
   - Extensible for future features.
     
-- UML
-use case diagram:
+UML
+- use case diagram:
 ![4](https://github.com/StevenWangYuxuan/Software-Development-Project/blob/main/img/4.png)
 
-sequence diagram:
+
+- sequence diagram:
 ![5](https://github.com/StevenWangYuxuan/Software-Development-Project/blob/main/img/5.png)
 
 2. **Design:**
