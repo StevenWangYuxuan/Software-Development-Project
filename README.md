@@ -414,4 +414,29 @@ toolbar.update()
   - Open-source the software for community contributions
   - Collaborate with educators to enhance its educational value 
 
+### Declaration
+
+**Specifically, the code snippet uses these packages to:**
+- **Sympy**: parse functions, compute integrals, and calculate volumes.
+- **NumPy**: generate data points and create meshes.
+- **Matplotlib**: create 3D surface plots, original function plots, and integral function plots.
+- **Tkinter**: create a GUI window, buttons, labels, and other widgets.
+> By leveraging these external packages, the code snippet can focus on its core functionality, such as computing and visualizing functions and integrals, without having to implement these features from scratch.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
