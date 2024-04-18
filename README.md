@@ -62,9 +62,9 @@ The code structure of the program is as follows：
 # #
 
 ### Graphical Abstract*
-![3](https://github.com/StevenWangYuxuan/RW-project/blob/main/README-project/3.png)
+![5](https://github.com/StevenWangYuxuan/Software-Development-Project/blob/main/img/5.png)
 
-![4](https://github.com/StevenWangYuxuan/RW-project/blob/main/README-project/4.png)
+![6](https://github.com/StevenWangYuxuan/Software-Development-Project/blob/main/img/6.png)
 
 # #
 
@@ -119,10 +119,10 @@ What is Agile and why is it a great fit?
     
 - UML
 use case diagram:
-![4](https://github.com/StevenWangYuxuan/RW-project/blob/main/README-project/4.png)
+![4](https://github.com/StevenWangYuxuan/Software-Development-Project/blob/main/img/4.png)
 
 sequence diagram:
-![5](https://github.com/StevenWangYuxuan/RW-project/blob/main/README-project/5.png)
+![5](https://github.com/StevenWangYuxuan/Software-Development-Project/blob/main/img/5.png)
 
 2. **Design:**
 
