@@ -62,7 +62,7 @@ The code structure of the program is as follows：
 # #
 
 ### Graphical Abstract* (What does this software look like?)
-<img width="450" height="350" src="https://github.com/StevenWangYuxuan/Software-Development-Project/blob/main/img/5.png"/>
+<img width="900" height="700" src="https://github.com/StevenWangYuxuan/Software-Development-Project/blob/main/img/5.png"/>
 
 
 ![6](https://github.com/StevenWangYuxuan/Software-Development-Project/blob/main/img/6.png)
