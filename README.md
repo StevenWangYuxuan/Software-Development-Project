@@ -11,6 +11,44 @@
 - The program will draw the rotated three-dimensional volume according to the user's selection and display the calculation results.
 
 # #
+### Usage
+#### Prerequisites:
+- Python 3.x
+- NumPy
+- Matplotlib
+- Sympy
+- Tkinter
+#### Steps:
+
+1. Copy and paste the code into your Python IDE.
+2. Run the code.
+3. In the GUI, enter the following：
+    - The function expression (e.g., x**2)
+    - The start value of the integration range (e.g., 0)
+    - The end value of the integration range (e.g., 1)
+    - Optionally, choose to calculate the volume around the X or Y axis
+4. Click the "Plot Function and Integral" button.
+   
+#### Code Explanation:
+
+- The code creates a GUI application that allows the user to input a function and calculate its integral and volume.
+- The user can choose to calculate the volume around the X or Y axis.
+- The code uses Sympy to parse the function and perform the integration.
+- It uses Matplotlib and Tkinter to plot the function, integral, and volume.
+
+#### Example:
+
+To plot the integral of the function x^2 and calculate the volume around the X axis, follow these steps:
+1. Enter the function expression x**2.
+2. Enter the start value of the integration range 0.
+3. Enter the end value of the integration range 1.
+4. Select the "Around X axis" option.
+5. Click the "Plot Function and Integral" button.
+
+**Result:**
+The program will plot the function x^2, its integral, and the volume around the X axis. The volume result will be displayed in the GUI.
+
+# #
 
 ### Code structure
 The code structure of the program is as follows：
