@@ -104,6 +104,8 @@ The code structure of the program is as follows：
 
 <img width="700" height="400" src="https://github.com/StevenWangYuxuan/Software-Development-Project/blob/main/img/6.png"/>
 
+<img width="700" height="400" src="https://github.com/StevenWangYuxuan/Software-Development-Project/blob/main/img/8.png"/>
+
 # #
 
 ### The type of software development process is applied.
