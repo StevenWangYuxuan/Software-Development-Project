@@ -210,9 +210,34 @@ UML
 # #
 
 ### Members (Roles & Responsibilities & Portion)
-- Product Owner (Shay) : Manages the product backlog and prioritizes user stories
-- Development Team (Shay, Steven, James) : Designs, develops, and tests the software
-- Scrum Master (Shay, Steven, James): Facilitates the Scrum process and removes roadblocks
+
+**Task 1**: Create User Interface and Graphical Display (Shay)
+- Create input fields, buttons, and graphical displays.
+- Ensure that the application is easy to use and has an intuitive user experience.
+
+**Task 2**: Implement Function Parsing, Integral Calculation, and Volume Calculation (Steven)
+- Implement algorithms to parse functions, calculate integrals, and calculate volumes.
+- Ensure that the application is mathematically accurate and can handle a variety of functions.
+
+**Task 3**: Design and Implement Data Visualization, make a demo video through youtube (James)
+- Design and implement visual representations of the function, integral, and volume results.
+- Ensure that the graphics are clear, informative, and easy to understand.
+
+**Task 4**: Testing and Documentation (All 3 people)
+- Write and execute test cases to verify the functionality and accuracy of the application.
+- Write user manuals and documentation explaining the application's functionality and how to use it.
+
+#### Timeline:
+- Week 1 (3/11-3/18): Start Tasks 1 and 2
+- Week 2 (3/23-3/30): Start Task 3
+- Week 3 (4/5-4/12): Complete Tasks 1, 2, and 3
+- Week 4 (4/13-4/20): Complete Task 4
+
+#### Communication Plan:
+
+- **Daily stand-up meetings**: Short daily meetings to discuss progress, roadblocks, and next steps.
+- **Code reviews**: Code reviews will be conducted before code is committed to ensure quality and consistency.
+- **Instant messaging**: An instant messaging platform (such as Slack or Microsoft Teams) will be used for quick communication and problem-solving.
 
 # #
 
