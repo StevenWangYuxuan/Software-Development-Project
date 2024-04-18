@@ -124,7 +124,7 @@ UML
 
 
 - sequence diagram:
-![5](https://github.com/StevenWangYuxuan/Software-Development-Project/blob/main/img/5.png)
+![3](https://github.com/StevenWangYuxuan/Software-Development-Project/blob/main/img/3.png)
 
 2. **Design:**
 
