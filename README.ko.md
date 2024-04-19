@@ -9,7 +9,7 @@
 - 프로그램은 사용자의 선택에 따라 회전된 3D 볼륨을 그리고 계산 결과를 표시합니다.
 # #
 ### 용법
-#### 전제 조건:
+#### 전제 조건: (다음 단계를 수행하기 전에 이러한 패키지를 Python IDE에 설치해야 합니다.)
 - Python 3.x
 - NumPy
 - Matplotlib
@@ -18,6 +18,7 @@
 - 
 ### 단계:
 1. 코드를 복사하여 파이썬 IDE에 붙여넣습니다.
+      - vscode를 사용하려면 (https://code.visualstudio.com/learn/get-started/basics) 를 사용하면 설정 방법을 확인할 수 있습니다.
 2. 코드를 실행합니다.
 3. GUI에서 다음을 입력합니다.
       - 함수 표현식 (예: x**2)
@@ -25,6 +26,8 @@
       - 포인트 범위의 최종 값 (예: 1)
       - (선택 사항) X축 또는 Y축 주위의 볼륨 계산을 선택합니다.
 4. 함수와 포인트 그리기 버튼을 클릭합니다.
+
+> 다음에 이 코드를 쉽게 열고.exe 형식으로 바로 가기를 만들려면 에서 정보를 검색합니다.https://blog.csdn.net/2301_81337765/article/details/135012811
    
 #### 코드 설명:
 - 이 코드는 함수를 입력하고 적분과 볼륨을 계산할 수 있는 GUI 응용 프로그램을 만듭니다.
@@ -388,3 +391,8 @@ toolbar.update()
 <img width="850" height="400" src="https://github.com/StevenWangYuxuan/Software-Development-Project/blob/main/img/9.png"/>
 
 > 은 (는) 이러한 외부 패키지를 활용하여 코드 조각을 처음부터 이러한 기능을 구현하지 않고도 함수와 적분을 계산하고 시각화하는 등 핵심 기능에 집중할 수 있습니다.
+### 참조
+https://code.visualstudio.com/learn/get-started/basics
+
+https://blog.csdn.net/2301_81337765/article/details/135012811
+
