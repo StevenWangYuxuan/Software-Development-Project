@@ -20,7 +20,7 @@
 - Tkinter
 #### Steps:
 
-1. Copy and paste the code into your Python IDE.
+1. Copy and paste the code into your Python IDE. (https://code.visualstudio.com/learn/get-started/basics)
 2. Run the code.
 3. In the GUI, enter the following：
     - The function expression (e.g., x**2)
