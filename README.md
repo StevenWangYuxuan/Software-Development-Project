@@ -429,6 +429,9 @@ toolbar.update()
 
 > By leveraging these external packages, the code snippet can focus on its core functionality, such as computing and visualizing functions and integrals, without having to implement these features from scratch.
 
+### Reference
+https://code.visualstudio.com/learn/get-started/basics
+https://blog.csdn.net/2301_81337765/article/details/135012811
 
 
 
