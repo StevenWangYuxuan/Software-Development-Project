@@ -15,7 +15,7 @@
 - Matplotlib
 - Sympy
 - Tkinter
-- 
+
 ### 단계:
 1. 코드를 복사하여 파이썬 IDE에 붙여넣습니다.
       - vscode를 사용하려면 (https://code.visualstudio.com/learn/get-started/basics) 를 사용하면 설정 방법을 확인할 수 있습니다.
