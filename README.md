@@ -20,14 +20,15 @@
 - Tkinter
 #### Steps:
 
-1. Copy and paste the code into your Python IDE. (https://code.visualstudio.com/learn/get-started/basics)
-2. Run the code.
-3. In the GUI, enter the following：
+1. Copy and paste the code into your Python IDE.
+    - if you want to use vscode, (https://code.visualstudio.com/learn/get-started/basics) can help you how to set up
+3. Run the code.
+4. In the GUI, enter the following：
     - The function expression (e.g., x**2)
     - The start value of the integration range (e.g., 0)
     - The end value of the integration range (e.g., 1)
     - Optionally, choose to calculate the volume around the X or Y axis
-4. Click the "Plot Function and Integral" button.
+5. Click the "Plot Function and Integral" button.
    
 > If next time you want to conveniently open this code and create a shortcut in .exe format, you can search the information in https://blog.csdn.net/2301_81337765/article/details/135012811
    
