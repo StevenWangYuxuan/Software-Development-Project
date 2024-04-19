@@ -12,7 +12,7 @@
 
 # #
 ### Usage
-#### Prerequisites: (need to install these packages before you do the next steps)
+#### Prerequisites: (need to install these packages in your Python IDE before you do the next steps)
 - Python 3.x
 - NumPy
 - Matplotlib
