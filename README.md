@@ -422,7 +422,7 @@ toolbar.update()
 - **Matplotlib**: create 3D surface plots, original function plots, and integral function plots.
 - **Tkinter**: create a GUI window, buttons, labels, and other widgets.
   
-<img width="700" height="400" src="https://github.com/StevenWangYuxuan/Software-Development-Project/blob/main/img/9.png"/>
+<img width="850" height="400" src="https://github.com/StevenWangYuxuan/Software-Development-Project/blob/main/img/9.png"/>
 
 > By leveraging these external packages, the code snippet can focus on its core functionality, such as computing and visualizing functions and integrals, without having to implement these features from scratch.
 
