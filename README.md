@@ -29,6 +29,8 @@
     - Optionally, choose to calculate the volume around the X or Y axis
 4. Click the "Plot Function and Integral" button.
    
+> If next time you want to conveniently open this code and create a shortcut in exe format, you can search the information in https://blog.csdn.net/2301_81337765/article/details/135012811
+   
 #### Code Explanation:
 
 - The code creates a GUI application that allows the user to input a function and calculate its integral and volume.
