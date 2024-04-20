@@ -4,7 +4,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg, NavigationToolbar2Tk
 import sympy as sp
-from tkinter import ttk
+
 
 
 def plot_volume_around_axis(function_input, start, end, axis='x'):
@@ -160,7 +160,7 @@ axis_y_radio.grid(row=2, column=3, sticky=tk.W, padx=5, pady=5)
 plot_button = ttk.Button(main_frame, text="Plot Function and Integral", command=lambda: plot_function_integral_volume())
 plot_button.grid(row=3, column=0, columnspan=4, sticky=(tk.W, tk.E), padx=5, pady=10)
 
-# 确保所有行和列在主框架中都有适当的权重
+
 for i in range(4):
     main_frame.columnconfigure(i, weight=1)
 for i in range(7):
