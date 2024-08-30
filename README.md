@@ -1,5 +1,5 @@
 # Math functions and volume calculator   
-  > This program is a graphical user interface (GUI) application developed based on the Tkinter library. It is used to draw mathematical functions, calculate the integral of the function, and calculate the three-dimensional volume obtained by rotating the function around the specified axis according to the user's selection.
+  > T1his program is a graphical user interface (GUI) application developed based on the Tkinter library. It is used to draw mathematical functions, calculate the integral of the function, and calculate the three-dimensional volume obtained by rotating the function around the specified axis according to the user's selection.
 
 **Here is the DEMO https://youtu.be/uiwxuDXgogU?feature=shared**
 
